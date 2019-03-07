@@ -1,17 +1,12 @@
 import random
 
 def  instructions():
-    play = input("Would you like to play?(y/n): ").lower()
-    if play == "y":
-        print("1.Rock")
-        print("2.Paper")
-        print("3.Scissors")
-        print("4.Lizard")
-        print("5.Spock")
-
-    elif play != "n":
-        print("error has accured please type y for yes or n for no:")
-        instructions()
+    print("Welome to rock, paper, scissors, lizard, spock.")
+    print("1.Rock")
+    print("2.Paper")
+    print("3.Scissors")
+    print("4.Lizard")
+    print("5.Spock")
 
 
 
@@ -34,6 +29,9 @@ def getPlayerChoice():
         print("You picked Lizard")
     elif choice == 5:
         print("You picked Spock")
+    else :
+        print("error has occured, please type a number between 1-5:")
+        instructions()
     return choice
 
 
